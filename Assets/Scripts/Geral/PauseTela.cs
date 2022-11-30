@@ -21,7 +21,7 @@ public class PauseTela : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape)) Pause();
     }
 
-    private void Pause(){
+    public void Pause(){
 
         if (EstaPausado)
         {
