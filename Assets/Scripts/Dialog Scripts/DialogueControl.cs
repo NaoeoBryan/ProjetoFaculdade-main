@@ -23,6 +23,7 @@ public class DialogueControl : MonoBehaviour
         sentences = txt;
         actorNameText.text = actorName;
         StartCoroutine(TypeSentence());
+
     }
 
     IEnumerator TypeSentence()
@@ -38,7 +39,7 @@ public class DialogueControl : MonoBehaviour
     {
         if(speechText.text == sentences[index])
         {
-            //ainda há textos
+            //ainda ha textos
             if(index < sentences.Length - 1)
             {
                 index++;
